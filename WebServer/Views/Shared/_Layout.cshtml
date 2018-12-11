@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico" type="image/ico" />
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <title>@ViewBag.Title</title>
+    <!--压缩css-->
+    @Styles.Render("~/Resurce/frameManager/css")
+    @Styles.Render("~/Resurce/userManager/css")
+   
+
+</head>
+
+<body>
+    <!--头部-->
+    <header>
+        <p>@Html.ActionLink("WebServer", "Index", "Home")@ViewBag.CompanyName</p>
+       
+    </header>
+
+    <section class="container body-content">
+        <!--子页内容-->
+        @RenderBody()
+       
+
+        
+      
+    </section>
+
+    <!--页脚-->
+    <footer>
+        <p>&copy; @DateTime.Now.Year - @ViewBag.CompanyName</p>
+    </footer>
+    <!--压缩js-->
+    @Scripts.Render("~/Resurce/frameManager/js")
+    @Scripts.Render("~/Resurce/userManager/js")
+    <!--内容部分-->
+    @RenderSection("scripts", required: false)
+</body>
+</html>
