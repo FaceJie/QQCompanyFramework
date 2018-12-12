@@ -9,7 +9,7 @@ using Unitils;
 
 namespace WebServer.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseServerController
     {
         
         // GET: Home

@@ -125,6 +125,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Error.html" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Resurce\frameManager\bootstrap\css\bootstrap-theme.css" />
@@ -151,6 +152,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\Api\AuthLoginController.cs" />
+    <Compile Include="Controllers\BaseServerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SystemManager\SystemManagerController.cs" />
     <Compile Include="Controllers\UserManager\UserManagerController.cs" />
@@ -163,6 +165,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\System\UserLoginViewMode.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -179,7 +182,9 @@
     <Content Include="Resurce\frameManager\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Resurce\frameManager\bootstrap\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Resurce\frameManager\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="App_Data\log4net.config" />
+    <Content Include="App_Data\log4net.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -190,7 +195,7 @@
   <ItemGroup>
     <Folder Include="Resurce\userManager\font\" />
     <Folder Include="Resurce\userManager\images\" />
-    <Folder Include="ViewModels\" />
+    <Folder Include="Views\BaseServer\" />
     <Folder Include="Views\SystemManager\" />
     <Folder Include="Views\UserManager\" />
   </ItemGroup>
