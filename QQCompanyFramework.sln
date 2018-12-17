@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unitils", "Unitils\Unitils.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orm", "Orm\Orm.csproj", "{DF00CFA4-39F0-4937-915A-FF3AE7118927}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{B7846C67-4B34-40FE-9D17-A04DAF4FE2AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{DF00CFA4-39F0-4937-915A-FF3AE7118927}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF00CFA4-39F0-4937-915A-FF3AE7118927}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF00CFA4-39F0-4937-915A-FF3AE7118927}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7846C67-4B34-40FE-9D17-A04DAF4FE2AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7846C67-4B34-40FE-9D17-A04DAF4FE2AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7846C67-4B34-40FE-9D17-A04DAF4FE2AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7846C67-4B34-40FE-9D17-A04DAF4FE2AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,5 +44,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{960D7197-4D46-42BC-BDBB-957F2F8DDD08} = {E353CA31-06E5-4888-BEFF-6E1DE3F46A28}
 		{DF00CFA4-39F0-4937-915A-FF3AE7118927} = {28D94662-D31D-4F80-A4A4-49CF93243C0A}
+		{B7846C67-4B34-40FE-9D17-A04DAF4FE2AF} = {28D94662-D31D-4F80-A4A4-49CF93243C0A}
 	EndGlobalSection
 EndGlobal
